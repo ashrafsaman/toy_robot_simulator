@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import { Provider } from "react-redux";
+import store from "./store/configureStore";
+import { Container, Typography, Box } from '@mui/material';
+import Menu from './components/Menu';
+import Board from './components/Board';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Container className="App" maxWidth="xl">
+        <Box display="flex" flexDirection={['column', 'column', 'row', 'row']} gap={4}>
+          <Box width="100%">
+            <Typography variant="h3" component="h3" color="primary" marginBottom="64px">Toy Robot Simulator</Typography>
+            <Menu />
+          </Box>
+          <Board />
+        </Box>
+      </Container>
+    </Provider>
   );
 }
 
 export default App;
+

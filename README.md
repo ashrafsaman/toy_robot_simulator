@@ -1,3 +1,8 @@
+# `How to run app`
+Press UP, DOWN, LEFT or RIGHT buttons to move the robot. If the robot is at the edge of board, it will not move and the user will be presented with an error.
+Press the arrows keys to move the robot.
+Enter the x and y coordinates and press set position button to reset the position of robot.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -5,6 +10,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+run npm install to install the required node modules.
 
 ### `npm start`
 
@@ -39,8 +47,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `npm run lint`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+run npm run lint to see the linting errors
